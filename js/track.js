@@ -72,6 +72,11 @@
 			if (variation != 'retro') {
 				var value = items.inc(label);
 				document.getElementById(label).innerHTML = value;
+                                if (value == keymax[label]) {
+                                  document.getElementById(label).style.color = 'lightgreen';
+                                } else {
+                                  document.getElementById(label).style.color = 'white';
+                                }
 				skipkey = true;
 			} else {
 				var value = items.dec(label);
@@ -83,6 +88,12 @@
 			if (variation != 'retro') {
 				var value = items.inc(label);
 				document.getElementById(label).innerHTML = value;
+                                if (value == keymax[label]) {
+                                  document.getElementById(label).style.color = 'lightgreen';
+                                } else {
+                                  document.getElementById(label).style.color = 'white';
+                                }
+				skipkey = true;
 				skipkey = true;
 			} else {
 				var value = items.dec(label);

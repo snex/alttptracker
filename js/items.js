@@ -6,6 +6,20 @@
 	
 	var keychestmod = variation === 'retro' ? 3 : 0;
 	var keymod = variation === 'retro' ? 1 : 0;
+    window.keymax = {
+      smallkey1: 1,
+      smallkey2: 1,
+      smallkey3: 6,
+      smallkey4: 1,
+      smallkey5: 3,
+      smallkey6: 1,
+      smallkey7: 2,
+      smallkey8: 3,
+      smallkey9: 4,
+      smallkey10: 4,
+      smallkeyhalf0: 1,
+      smallkeyhalf1: 2
+    };
 
     window.items = {
         tunic: 1,
@@ -113,18 +127,18 @@
             boomerang: { max: 3 },
             glove: { max: 2 },
 			smallkey0: { min: 0, max: 0 },
-            smallkey1: { min: 0, max: 1 },
-            smallkey2: { min: 0, max: 1 },
-            smallkey3: { min: 0, max: 6 },
-            smallkey4: { min: 0, max: 1 },
-            smallkey5: { min: 0, max: 3 },
-            smallkey6: { min: 0, max: 1 },
-            smallkey7: { min: 0, max: 2 },
-            smallkey8: { min: 0, max: 3 },
-            smallkey9: { min: 0, max: 4 },
-			smallkey10: { min: 0, max: 4 },
-			smallkeyhalf0: { min: 0, max: 1 },
-			smallkeyhalf1: { min: 0, max: 2 }			
+            smallkey1: { min: 0, max: keymax.smallkey1 },
+            smallkey2: { min: 0, max: keymax.smallkey2 },
+            smallkey3: { min: 0, max: keymax.smallkey3 },
+            smallkey4: { min: 0, max: keymax.smallkey4 },
+            smallkey5: { min: 0, max: keymax.smallkey5 },
+            smallkey6: { min: 0, max: keymax.smallkey6 },
+            smallkey7: { min: 0, max: keymax.smallkey7 },
+            smallkey8: { min: 0, max: keymax.smallkey8 },
+            smallkey9: { min: 0, max: keymax.smallkey9 },
+			smallkey10: { min: 0, max: keymax.smallkey10 },
+			smallkeyhalf0: { min: 0, max: keymax.smallkeyhalf0 },
+			smallkeyhalf1: { min: 0, max: keymax.smallkeyhalf1 }			
         }),
         dec: limit(-1, {
             chest0: { max: 3 },
@@ -149,18 +163,18 @@
             keychest9: { max: 12 - keychestmod },
 			keychest10: { max: 27 },
 			smallkey0: { max: 0 },
-            smallkey1: { max: 1 },
-            smallkey2: { max: 1 },
-            smallkey3: { max: 6 },
-            smallkey4: { max: 1 },
-            smallkey5: { max: 3 },
-            smallkey6: { max: 1 },
-            smallkey7: { max: 2 },
-            smallkey8: { max: 3 },
-            smallkey9: { max: 4 },
-			smallkey10: { max: 4 },
-			smallkeyhalf0: { max: 1 },
-			smallkeyhalf1: { max: 2 }
+            smallkey1: { max: keymax.smallkey1 },
+            smallkey2: { max: keymax.smallkey2 },
+            smallkey3: { max: keymax.smallkey3 },
+            smallkey4: { max: keymax.smallkey4 },
+            smallkey5: { max: keymax.smallkey5 },
+            smallkey6: { max: keymax.smallkey6 },
+            smallkey7: { max: keymax.smallkey7 },
+            smallkey8: { max: keymax.smallkey8 },
+            smallkey9: { max: keymax.smallkey9 },
+			smallkey10: { max: keymax.smallkey10 },
+			smallkeyhalf0: { max: keymax.smallkeyhalf0 },
+			smallkeyhalf1: { max: keymax.smallkeyhalf1 }
         })
     };
 
